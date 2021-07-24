@@ -1,21 +1,84 @@
 header{
-  border-bottom: 1px solid #DBDBDB !important;
+  border-bottom: 1px solid #DBDBDB;
   background-color: #FFFFFF;
 }
 
+@media (min-width: 992px){
+  .pad{
+    padding: .5rem 200px .5rem 200px;
+  }
+}
+
 body{
-  background-color: #FAFAFA;
+  background-color: #FAFAFA !important;
+}
+
+@media (min-width: 992px){
+  .container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .content{
-  margin-top: 30px !important;
-  padding: 50px !important;
-  border: 1px solid #DBDBDB !important;
+  margin-top: 20px;
+  padding: 2.5%;
+  padding-bottom: 1.5% !important;
+  border: 1px solid #DBDBDB;
   background-color: #FFFFFF;
 }
 
 @media (min-width: 992px){
   .content{
-    margin: 30px 100px 0px 100px !important;
+    margin: 30px 300px 0px 300px !important;
   }
+  .comment{
+    margin: 0px 300px 0px 300px !important;
+  }
+}
+
+.content p{
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.lov{
+  padding: .5rem .5rem .2rem 0rem;
+}
+
+.lov img{
+  width: 25px !important;
+  height: auto;
+}
+
+.user{
+  padding: 0rem 0rem 0rem .2rem !important;
+  font-size: 13px !important;
+  font-weight: 550 !important;
+}
+
+.explanation{
+  padding: 0.5rem 0rem 0rem 0rem !important;
+  margin-top: -0.5rem;
+}
+
+.commet{
+  padding: 0rem 0rem 0rem .1rem;
+  border-top: 1px solid #DBDBDB;
+  padding-top: 1.1rem;
+}
+
+.sympathy{
+  margin-top: -.5rem;
+  margin-bottom: .8rem;
+}
+
+.comment{
+  padding: 2.5%;
+  padding-top: 1.5% !important;
+  padding-bottom: 1.5% !important;
+  border: 1px solid #DBDBDB;
+  border-top: 0px;
+  background-color: #FFFFFF;
 }
