@@ -1,4 +1,21 @@
+header{
+  border-bottom: 1px solid #DBDBDB !important;
+  background-color: #FFFFFF;
+}
+
 body{
-    margin: auto;
-    width: 66%;
+  background-color: #FAFAFA;
+}
+
+.content{
+  margin-top: 30px !important;
+  padding: 50px !important;
+  border: 1px solid #DBDBDB !important;
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 992px){
+  .content{
+    margin: 30px 100px 0px 100px !important;
+  }
 }
