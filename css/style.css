@@ -13,6 +13,13 @@ body{
   background-color: #FAFAFA !important;
 }
 
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (min-width: 992px){
   .container img {
     max-width: 100%;
@@ -22,6 +29,8 @@ body{
 }
 
 .content{
+  width: auto;
+  max-width: 100%;
   margin-top: 20px;
   padding: 2%;
   padding-bottom: 1.5% !important;
@@ -39,7 +48,7 @@ body{
 }
 
 .content p{
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -50,7 +59,7 @@ body{
 
 .user{
   padding: 0rem 0rem 0rem .2rem !important;
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-weight: 550 !important;
 }
 
@@ -103,4 +112,105 @@ input:focus{
   font-size: 12px;
   margin: 0px 2px 0px 2px !important;
   border-radius: 5px;
+  width: 220px;
+}
+
+.share{
+  background-color: #0095F6 !important;
+  color: #FFFFFF !important;
+}
+
+.add-post{
+  height: 500px;
+}
+
+@media (max-width: 576px){
+  .content-ver1{
+    height: auto !important;
+    min-width: 100%;
+    width: auto;
+  }
+
+  .content textarea{
+    height: auto;
+    min-height: 100%;
+    overflow: auto;
+    width: auto;
+    min-width: 100%;
+  }
+
+  .butt{
+    width: auto;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px){
+  .content-ver1{
+    height: 615px !important;
+  }
+
+  .content textarea{
+    height: 100px;
+    width: 400px;
+  }
+
+  .butt{
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px){
+  .left{
+    float: left !important;
+  }
+  .left-margin{
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 992px){
+  .content-ver1{
+    height: 600px;
+  }
+
+  .content textarea{
+    height: 100px;
+    width: 300px;
+  }
+
+  .butt{
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px){
+  .content-ver1{
+    height: 700px !important;
+  }
+
+  .content textarea{
+    height: 100px;
+    width: 400px;
+  }
+
+  .butt{
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 1400px){
+  .content-ver1{
+    height: 500px !important;
+  }
+
+  .content textarea{
+    height: 360px;
+    width: 225px;
+  }
+
+  .butt{
+    width: 225px;
+  }
 }
