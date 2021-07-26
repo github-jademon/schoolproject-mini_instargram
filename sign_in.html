@@ -55,35 +55,57 @@
     <!-- main -->
     <main>
         <section class="container">
-            <div class="col text-center m-20">
-                <div class="col text-center m-5"></div>
-                <div class="col text-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="./static/image/mini_instargram_logo.png" alt="" width="250" class="d-inline-block">
-                    </a>
-                </div>
-                <div class="col text-center m-5"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-                <form class="row login_form" method="post">
-                    {% csrf_token %}
-                    <div class="col text-center">
-                        <div class="col-md-12 form-group">
-                            <label>
-                                <input aria-label="닉네임" class="form-control" aria-required="true" maxlength="50" name="username" type="text" value="" placeholder="닉네임" onfocus="this.placeholder = ''" onblur="this.placeholder = '닉네임'">
-                            </label>
+                <div class="d-flex justify-content-center">
+                    <div class="col-3 text-center m-10 border border-secondary rounded">
+                        <div class="col text-center m-5"></div>
+                        <div class="col text-center">
+                            <a class="navbar-brand" href="">
+                                <img src="./static/image/mini_instargram_logo.png" alt="" width="250" class="d-inline-block">
+                            </a>
                         </div>
-                        <div class="col-md-12 form-group">
-                            <label>
-                                <input aria-label="비밀번호" class="form-control" aria-required="true" name="password" type="password" value="" placeholder="비밀번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호'">
-                            </label>
-                        </div>
-                        <div class="col text-center m-2"></div>
-                        <div class="col-md-12 form-group ">
-                            <button type="submit" value="submit" class="btn btn-primary" disabled>로그인</button>
-                        </div>
+                        <div class="col text-center m-5"></div>
+
+                        <form class="row login_form" method="post">
+                            {% csrf_token %}
+                            <div class="col text-center">
+                                <div class="col-md-12 form-group">
+                                    <label>
+                                        <input aria-label="닉네임" id="id" class="form-control" aria-required="true" maxlength="50" name="username" type="text" value="" placeholder="닉네임" onfocus="this.placeholder = ''" onblur="this.placeholder = '닉네임'">
+                                    </label>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label>
+                                        <input aria-label="비밀번호" id="password" class="form-control" aria-required="true" name="password" type="password" value="" placeholder="비밀번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호'">
+                                    </label>
+                                </div>
+                                <div class="col text-center m-2"></div>
+                                <div class="col-md-12 form-group">
+                                    <button id="submit" type="submit" value="submit" class="btn btn-primary" disabled>로그인</button>
+                                </div>
+                                <div class="col text-center m-2">
+                                    <a href="#">비밀번호 찾기</a>
+                                </div>
+                                <div class="col text-center m-2">
+                                    <a href="#">회원가입하기</a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
-            </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#id').on('input change', function () {
+                            if ($(this).val().length > 3) {
+                                $('#submit').prop('disabled', false);
+                            }
+                            else {
+                                $('#submit').prop('disabled', true);
+                            }
+                        });
+                    });
+                </script>
         </section>
     </main>
 
