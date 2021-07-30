@@ -103,8 +103,6 @@ input:focus{
   width: 70px;
   background-color: #FFFFFF;
   border: none;
-  /* border-width: .1rem !important; */
-  /* border-color: #CED4DA; */
   color: #B7E1FD;
   padding: 4px 4px 4px 4px;
   text-align: center;
@@ -213,4 +211,8 @@ input:focus{
   .butt{
     width: 225px;
   }
+}
+
+ul{
+  list-style: none;
 }
