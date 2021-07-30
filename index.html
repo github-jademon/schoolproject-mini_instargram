@@ -27,7 +27,7 @@
     <!-- hedaer -->
     <header>
         <div class="container">
-            <nav class="pad navbar navbar-expand-lg navbar-light pl-2 pr-2">
+            <nav class="pad navbar sticky-top navbar-expand-lg navbar-light pl-2 pr-2">
                 <a class="navbar-brand" href="#">
                     <img src="./image/mini_instargram_logo.png" alt="" width="160" class="d-inline-block">
                 </a>
@@ -37,6 +37,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">홈</a>
@@ -89,7 +93,7 @@
                             <li class="nav-item dropdown ms-auto" style="padding-bottom: .5rem;">
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/view_more.png" width="20rem" class="d-inline-block" alt="">
+                                    <i class="fas fa-caret-down" style="color: #8E8E8E;"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">수정</a></li>
@@ -151,9 +155,6 @@
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="content">
-
             </div>
         </section>
     </main>
