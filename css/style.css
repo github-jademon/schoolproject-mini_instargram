@@ -186,6 +186,11 @@ input:focus{
     width: auto;
     min-width: 100% !important;
   }
+
+  .but{
+    width: auto;
+    min-width: 49% !important;
+  }
 }
 
 @media (min-width: 576px){
@@ -197,6 +202,10 @@ input:focus{
 
   .butt{
     width: 490px;
+  }
+
+  .but{
+    width: 243px;
   }
 }
 
@@ -227,6 +236,10 @@ input:focus{
   .butt{
     width: 480px;
   }
+
+  .but{
+    width: 236px;
+  }
 }
 
 @media (min-width: 1200px){
@@ -239,6 +252,10 @@ input:focus{
 
   .butt{
     width: 500px;
+  }
+
+  .but{
+    width: 247px;
   }
 }
 
@@ -253,6 +270,10 @@ input:focus{
 
   .butt{
     width: 320px;
+  }
+
+  .but{
+    width: 157px;
   }
 }
 
