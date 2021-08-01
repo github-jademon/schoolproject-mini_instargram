@@ -58,6 +58,56 @@ a { text-decoration:none !important; }
   .post-content{
     margin: 30px 200px 0px 200px !important;
   }
+  .mypage-head{
+    margin: 0px 50px 0px 50px !important;
+  }
+  .mypage-main{
+    margin: 0px 50px 0px 50px !important;
+  }
+  .mypage-content{
+    margin: 0px 350px 0px 350px !important;
+  }
+}
+
+.mypage-content{
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  margin-top: 20px;
+  height: auto;
+  min-height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-left: 1px solid #DBDBDB;
+  border-right: 1px solid #DBDBDB;
+  background-color: #FFFFFF;
+}
+
+.mypage-head{
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  min-height: 30%;
+  padding: 2%;
+  padding-bottom: 1.5% !important;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  background-color: #FFFFFF;
+}
+
+.mypage-main{
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  min-height: 30%;
+  padding: 2%;
+  padding-bottom: 1.5% !important;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  background-color: #FFFFFF;
 }
 
 .content p{
@@ -169,6 +219,18 @@ input:focus{
 }
 
 @media (max-width: 576px){
+  .content textarea{
+    height: 150px;
+    width: 490px;
+  }
+
+  .butt{
+    width: 490px;
+  }
+
+  .but{
+    width: 243px;
+  }
   .content-ver1{
     min-width: 100%;
     width: auto;
@@ -191,25 +253,56 @@ input:focus{
     width: auto;
     min-width: 49% !important;
   }
-}
 
-@media (min-width: 576px){
-
-  .content textarea{
-    height: 150px;
-    width: 490px;
+  .mypage-content{
+    border: 1px solid #DBDBDB;
+    margin-top: 0px !important;
+    border-bottom: none;
+    border-top: none;
   }
 
-  .butt{
-    width: 490px;
+  .profil {
+    margin: 1rem !important;
+  }
+  
+  .profil-photo {
+    width: 7rem;
+    margin-top: 1rem;
   }
 
-  .but{
-    width: 243px;
+  .nick {
+    margin: 1rem;
+    margin-bottom: .7rem;
+  }
+  .follo {
+    margin: 1rem;
+    margin-top: .7rem;
+  }
+  .cont-img {
+    margin: .5rem;
+    width: 28%;
+    height: auto;
+    margin-right: 0rem;
+  }
+  .item{
+    margin: .1rem;
   }
 }
 
 @media (min-width: 992px){
+  .content textarea{
+    height: 200px;
+    width: 480px;
+    resize: none;
+  }
+
+  .butt{
+    width: 480px;
+  }
+
+  .but{
+    width: 236px;
+  }
   .left{
     float: left !important;
   }
@@ -223,22 +316,32 @@ input:focus{
     position: relative; 
     top: 10.8rem;
   }
-}
-
-@media (min-width: 992px){
-
-  .content textarea{
-    height: 200px;
-    width: 480px;
-    resize: none;
+  .profil {
+    margin: 4rem !important;
   }
-
-  .butt{
-    width: 480px;
+  .profil-photo {
+    width: 10rem;
   }
-
-  .but{
-    width: 236px;
+  .profil-button {
+    margin-top: 1rem !important;
+  }
+  .nick {
+    margin: 4rem;
+    margin-bottom: 0rem;
+    margin-right: .5rem;
+    margin-left: 1rem;
+  }
+  .follo {
+    margin: 1rem;
+  }
+  .cont-img {
+    margin: .5rem;
+    width: 30%;
+    height: auto;
+    margin-right: 0rem;
+  }
+  .item{
+    margin: .1rem;
   }
 }
 
@@ -256,6 +359,9 @@ input:focus{
 
   .but{
     width: 247px;
+  }
+  .mypage-content{
+    margin: 0px 350px 0px 350px !important;
   }
 }
 
@@ -275,8 +381,40 @@ input:focus{
   .but{
     width: 157px;
   }
+  .mypage-content{
+    margin: 0px 470px 0px 470px !important;
+  }
 }
 
 ul{
   list-style: none;
+}
+
+.profil{
+  float: left !important;
+}
+
+.profil-photo {
+  border-radius: 50%;
+}
+
+.profil-button {
+  margin-top: .2rem;
+  border-radius: 3px;
+  border: 1px solid #DBDBDB;
+  background-color: whitesmoke;
+}
+
+.text {
+  margin-left: 1rem;
+  width: auto;
+  min-width: 90%;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.kit {
+  margin-bottom: 2rem;
 }
