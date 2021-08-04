@@ -287,6 +287,9 @@ input:focus{
   .item{
     margin: .1rem;
   }
+  .commet{
+    height:200px;
+  }
 }
 
 @media (min-width: 992px){
@@ -311,10 +314,6 @@ input:focus{
   }
   .cont{
     width: 38.5%;
-  }
-  .bott{
-    position: relative; 
-    top: 10.8rem;
   }
   .profil {
     margin: 4rem !important;
@@ -342,6 +341,9 @@ input:focus{
   }
   .item{
     margin: .1rem;
+  }
+  .commet{
+    height:330px;
   }
 }
 
