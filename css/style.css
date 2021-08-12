@@ -67,6 +67,9 @@ a { text-decoration:none !important; }
   .mypage-content{
     margin: 0px 350px 0px 350px !important;
   }
+  .setting-content{
+    margin: 0px 350px 0px 350px !important;
+  }
 }
 
 .mypage-content{
@@ -80,6 +83,20 @@ a { text-decoration:none !important; }
   padding-right: 2%;
   border-left: 1px solid #DBDBDB;
   border-right: 1px solid #DBDBDB;
+  background-color: #FFFFFF;
+}
+.setting-content{
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  margin-top: 20px;
+  height: auto;
+  min-height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-left: 1px solid #DBDBDB;
+  border-right: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
   background-color: #FFFFFF;
 }
 
@@ -219,7 +236,7 @@ input:focus{
 }
 
 @media (max-width: 576px){
-  .content textarea{
+  .content-textarea{
     height: 150px;
     width: 490px;
   }
@@ -260,7 +277,13 @@ input:focus{
     border-bottom: none;
     border-top: none;
   }
-
+  .setting-content{
+    border: 1px solid #DBDBDB;
+    margin-top: 0px !important;
+    border-bottom: none;
+    border-top: none;
+  }
+  
   .profil {
     margin: 1rem !important;
   }
@@ -290,10 +313,19 @@ input:focus{
   .commet{
     height:200px;
   }
+  .mini {
+    display: none;
+  }
+  .mini-first {
+    margin-top: .5rem;
+  }
+  .mini textarea{
+    cols= 10;
+  }
 }
 
 @media (min-width: 992px){
-  .content textarea{
+  .content-textarea{
     height: 200px;
     width: 480px;
     resize: none;
@@ -345,11 +377,15 @@ input:focus{
   .commet{
     height:330px;
   }
+  .setleft {
+    margin-left: 4.1rem;
+    margin-right: -2.8rem !important;
+  }
 }
 
 @media (min-width: 1200px){
 
-  .content textarea{
+  .content-textarea{
     height: 150px;
     width: 500px;
     resize: none;
@@ -365,12 +401,23 @@ input:focus{
   .mypage-content{
     margin: 0px 350px 0px 350px !important;
   }
+  .setting-content{
+    margin: 0px 350px 0px 350px !important;
+  }
+  .setting-form {
+    width: 400px !important;
+    height: auto;
+  }
+  .setleft {
+    margin-left: 3.2rem;
+    margin-right: -1.9rem !important;
+  }
 }
 
 
 @media (min-width: 1400px){
 
-  .content textarea{
+  .content-textarea{
     height: 500px;
     width: 320px;
     resize: none;
@@ -386,6 +433,17 @@ input:focus{
   .mypage-content{
     margin: 0px 470px 0px 470px !important;
   }
+  .setting-form {
+    width: 400px;
+  }
+  .setleft {
+    margin-left: 8.5rem;
+    margin-right: -7.2rem !important;
+  }
+}
+
+.setleft {
+  float: left;
 }
 
 ul{
